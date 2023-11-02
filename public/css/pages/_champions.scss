@@ -1,0 +1,11 @@
+main.champion{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+    ul{
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      width: 70%;
+    }
+}

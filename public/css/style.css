@@ -1,3 +1,71 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+body main {
+  padding-top: 70px;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input, button, textarea, select, fieldset {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+cite {
+  font-style: normal;
+}
+
+li {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+li figure {
+  width: 100%;
+}
+li figure img {
+  width: 100%;
+}
+li article {
+  padding: 15px;
+  position: absolute;
+}
+li article h3 {
+  color: white;
+}
+
+main.champion {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+main.champion ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  width: 70%;
+}
 
 /*# sourceMappingURL=style.css.map */

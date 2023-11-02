@@ -11,13 +11,11 @@ export default async function champion() {
 
     return (
     <main className="champion">
-        <section className="card">
             <ul>
                 {
                     Object.keys(data.data).map((d, index) => <ListCard index={ index } data={ data.data[d] } />)
                 }
             </ul>
-        </section>
     </main>
     )
 }
