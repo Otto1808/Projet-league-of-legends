@@ -2,6 +2,7 @@
 *::before,
 *::after {
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -53,6 +54,27 @@ li article {
   position: absolute;
 }
 li article h3 {
+  color: white;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 50px 30px 50px;
+  background: #1b1c1D;
+}
+header p {
+  color: white;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 15vw;
+}
+header ul li a {
+  text-decoration: none;
   color: white;
 }
 
