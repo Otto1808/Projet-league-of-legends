@@ -61,33 +61,54 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 30px 50px 30px 50px;
+  align-items: center;
+  padding: 30px 40px 30px 40px;
   background: #1b1c1D;
 }
 header p {
+  font-size: 18px;
   color: white;
 }
 header ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 15vw;
+  align-items: center;
+  width: 25vw;
 }
 header ul li a {
   text-decoration: none;
   color: white;
 }
+header ul li:last-child {
+  border-radius: 10px;
+  padding: 10px;
+  background: deepskyblue;
+}
+
+main.home {
+  padding: 0;
+  width: 100vw;
+}
+main.home section.banner {
+  height: auto;
+}
+main.home section.banner img {
+  width: 100vw;
+  height: auto;
+}
 
 main.champion {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 100vw;
+  padding: 10vh 2.5vw;
 }
 main.champion ul {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
-  width: 70%;
+  gap: 1.5em;
 }
 
 /*# sourceMappingURL=style.css.map */

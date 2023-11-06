@@ -11,6 +11,7 @@ export default async function champion() {
 
     return (
     <main className="champion">
+            <h1>Les Champions de la faille de l'invocateur!</h1>
             <ul>
                 {
                     Object.keys(data.data).map((d, index) => <ListCard index={ index } data={ data.data[d] } />)

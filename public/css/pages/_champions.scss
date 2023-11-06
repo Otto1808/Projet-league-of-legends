@@ -1,11 +1,15 @@
 main.champion{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 100vw;
+  padding: 10vh 2.5vw;
+    h2{
+
+    }
     ul{
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      gap: 10px;
-      width: 70%;
+      gap: 1.5em;
     }
 }
