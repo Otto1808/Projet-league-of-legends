@@ -1,11 +1,12 @@
-main.champion{
+main.listOfChampions{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100vw;
   padding: 10vh 2.5vw;
-    h2{
-
+    h1{
+      padding-bottom: 5%;
     }
     ul{
       display: grid;

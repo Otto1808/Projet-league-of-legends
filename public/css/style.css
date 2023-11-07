@@ -65,7 +65,7 @@ header {
   padding: 30px 40px 30px 40px;
   background: #1b1c1D;
 }
-header p {
+header h3 {
   font-size: 18px;
   color: white;
 }
@@ -98,14 +98,18 @@ main.home section.banner img {
   height: auto;
 }
 
-main.champion {
+main.listOfChampions {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100vw;
   padding: 10vh 2.5vw;
 }
-main.champion ul {
+main.listOfChampions h1 {
+  padding-bottom: 5%;
+}
+main.listOfChampions ul {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1.5em;
