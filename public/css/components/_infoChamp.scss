@@ -1,0 +1,55 @@
+section.infoChampion {
+  padding-top: 1px;
+  width: 100vw;
+  min-height: 100vh;
+  background: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 5vh 3.5vw 40vh 3.5vw;
+  box-shadow: inset 0 -30vh 20vh #000;
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: hsla(0,0%,0%,.6);
+  }
+
+  img.chepa {
+    width: 100%;
+    height: auto;
+    backdrop-filter: blur(8px);
+    box-shadow: inset 0 10vh 5vh #000;
+  }
+
+  section{
+    color: white;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 60%;
+
+    h3{
+      font-size: 25px;
+    }
+
+    h1{
+      font-size: 70px;
+    }
+
+    article{
+      width: 70%;
+      padding: 2%;
+
+      p{
+        font-size: 18px;
+      }
+    }
+  }
+
+}

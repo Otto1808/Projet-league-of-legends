@@ -5,12 +5,18 @@ main.listOfChampions{
   align-items: center;
   width: 100vw;
   padding: 10vh 2.5vw;
+
     h1{
       padding-bottom: 5%;
     }
+
     ul{
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       gap: 1.5em;
+
+      li:hover{
+        transform: scale(1.1);
+      }
     }
 }

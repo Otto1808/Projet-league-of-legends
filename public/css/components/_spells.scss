@@ -1,0 +1,39 @@
+main.champion section.spellContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5%;
+
+  & > section.spells {
+    width: inherit;
+    flex-direction: row;
+
+    h1{
+      padding-left:5%;
+      font-size: 40px;
+    }
+
+    section{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      ul{
+        display: flex;
+        align-items: end;
+        padding: 5%;
+
+        li{
+          padding: 5px;
+        }
+      }
+      article{
+        padding: 5%;
+      }
+    }
+  }
+  video{
+    width: 80%;
+  }
+}

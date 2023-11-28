@@ -1,7 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@1&family=Open+Sans:wght@300;800&display=swap");
 *,
 *::before,
 *::after {
-  padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
@@ -33,6 +33,11 @@ input, button, textarea, select, fieldset {
 
 cite {
   font-style: normal;
+}
+
+p, a, h1, h2, h3 {
+  font-family: "Fanwood Text", serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 li {
@@ -86,6 +91,90 @@ header ul li:last-child {
   background: deepskyblue;
 }
 
+section.infoChampion {
+  padding-top: 1px;
+  width: 100vw;
+  min-height: 100vh;
+  background: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 5vh 3.5vw 40vh 3.5vw;
+  box-shadow: inset 0 -30vh 20vh #000;
+}
+section.infoChampion::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsla(0, 0%, 0%, 0.6);
+}
+section.infoChampion img.chepa {
+  width: 100%;
+  height: auto;
+  backdrop-filter: blur(8px);
+  box-shadow: inset 0 10vh 5vh #000;
+}
+section.infoChampion section {
+  color: white;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 60%;
+}
+section.infoChampion section h3 {
+  font-size: 25px;
+}
+section.infoChampion section h1 {
+  font-size: 70px;
+}
+section.infoChampion section article {
+  width: 70%;
+  padding: 2%;
+}
+section.infoChampion section article p {
+  font-size: 18px;
+}
+
+main.champion section.spellContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5%;
+}
+main.champion section.spellContainer > section.spells {
+  width: inherit;
+  flex-direction: row;
+}
+main.champion section.spellContainer > section.spells h1 {
+  padding-left: 5%;
+  font-size: 40px;
+}
+main.champion section.spellContainer > section.spells section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+main.champion section.spellContainer > section.spells section ul {
+  display: flex;
+  align-items: end;
+  padding: 5%;
+}
+main.champion section.spellContainer > section.spells section ul li {
+  padding: 5px;
+}
+main.champion section.spellContainer > section.spells section article {
+  padding: 5%;
+}
+main.champion section.spellContainer video {
+  width: 80%;
+}
+
 main.home {
   padding: 0;
   width: 100vw;
@@ -113,6 +202,19 @@ main.listOfChampions ul {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1.5em;
+}
+main.listOfChampions ul li:hover {
+  transform: scale(1.1);
+}
+
+main.champion {
+  width: 100vw;
+  padding: 0;
+}
+main.champion section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

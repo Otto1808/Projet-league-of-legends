@@ -1,6 +1,6 @@
 //basis
 @import "basis/_resets";
 //components
-@import "components/_ListCard", "components/_Header";
+@import "components/_ListCard", "components/_Header", "components/_infoChamp", "components/_spells";
 //pages
-@import "pages/_home", "pages/listOfChampions", "pages/_items";
+@import "pages/_home", "pages/listOfChampions", "pages/_items", "pages/_champion";
